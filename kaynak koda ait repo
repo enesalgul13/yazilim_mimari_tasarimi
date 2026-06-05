@@ -1,0 +1,121 @@
+# Smart Campus Notification System
+
+## Proje Hakkında
+
+Bu proje, Yazılım Mimarisi ve Tasarımı dersi final projesi kapsamında geliştirilmiştir.
+
+Sistem, üniversite ortamında yayınlanan duyuruların öğrenci ve öğretim üyelerine otomatik olarak iletilmesini sağlayan bir Akıllı Kampüs Duyuru ve Bildirim Sistemi sunmaktadır.
+
+Projede nesne yönelimli programlama prensipleri ve tasarım desenleri kullanılarak katmanlı bir mimari oluşturulmuştur.
+
+---
+
+## Kullanılan Tasarım Desenleri
+
+### Observer Pattern
+
+Yeni bir duyuru yayınlandığında sisteme kayıtlı kullanıcıların otomatik olarak bilgilendirilmesini sağlar.
+
+* Subject: AnnouncementPublisher
+* Observer: Student, Teacher
+
+### Factory Pattern
+
+Duyuru ve bildirim nesnelerinin merkezi olarak oluşturulmasını sağlar.
+
+* AnnouncementFactory
+* NotificationFactory
+
+### Singleton Pattern
+
+Bildirim merkezinin sistem genelinde yalnızca tek bir örneğinin kullanılmasını sağlar.
+
+* NotificationCenter
+
+---
+
+## Kullanılan Teknolojiler
+
+* Java
+* Object Oriented Programming (OOP)
+* Observer Pattern
+* Factory Pattern
+* Singleton Pattern
+* Layered Architecture
+
+---
+
+## Proje Yapısı
+
+src
+
+├── application
+
+├── domain
+
+│ ├── announcements
+
+│ ├── notifications
+
+│ ├── observer
+
+│ └── users
+
+├── infrastructure
+
+│ ├── factories
+
+│ └── singleton
+
+└── presentation
+
+---
+
+## Kullanıcı Tipleri
+
+* Student
+* Teacher
+
+---
+
+## Duyuru Tipleri
+
+* Exam Announcement
+* Event Announcement
+
+---
+
+## Bildirim Tipleri
+
+* Email Notification
+* SMS Notification
+* Push Notification
+
+---
+
+## Çalıştırma
+
+Projeyi çalıştırmak için:
+
+bash
+javac presentation/Main.java
+java presentation.Main
+
+
+veya VS Code üzerinden Main.java dosyası çalıştırılabilir.
+
+---
+
+## Yapay Zekâ Kullanımı
+
+Bu proje geliştirilirken OpenAI tarafından sunulan ChatGPT aracı; yazılım mimarisinin planlanması, tasarım desenlerinin uygulanması, kod geliştirme süreçleri ve proje dokümantasyonunun hazırlanması aşamalarında yardımcı bir araç olarak kullanılmıştır.
+
+Yapay zekâ tarafından sunulan öneriler ve örnek kodlar proje gereksinimlerine uygun olarak incelenmiş, düzenlenmiş ve geliştirici tarafından doğrulanarak projeye entegre edilmiştir.
+
+---
+
+## Geliştirici
+
+İbrahim Enes ALGÜL
+
+Bilgisayar Mühendisliği
